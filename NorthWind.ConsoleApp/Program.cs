@@ -4,6 +4,8 @@ using Microsoft.Extensions.DependencyInjection;
 var Builder = Host.CreateApplicationBuilder();
 
 Builder.Services.AddSingleton<IUserActionWriter, ConsoleWriter>();
+Builder.Services.AddSingleton<IUserActionWriter, FileWriter>();
+Builder.Services.AddSingleton<IUserActionWriter, DebugWriter>();
 Builder.Services.AddSingleton<AppLogger>();
 Builder.Services.AddSingleton<ProductService>();
 
