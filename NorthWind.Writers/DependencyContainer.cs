@@ -1,13 +1,12 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using NorthWind.Entities.Interfaces;
-using NorthWind.Writers;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Microsoft.Extensions.DependencyInjection
+namespace NorthWind.Writers
 {
     public static class DependencyContainer
     {
